@@ -6,6 +6,7 @@ showWorkButton.addEventListener("click", showWork)
 
 function showWork(event) { 
 event.preventDefault() 
+innerHTML = ""
 
 //FIRST CARD PROJECT 1
 
