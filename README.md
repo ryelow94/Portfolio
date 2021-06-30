@@ -1,1 +1,2 @@
-# Portfolio
+# Portfolio 
+This app is designed to provide all the necessary information a potential employer may need to hire me. It provides examples of websites I have designed as well as links to the URLs and Repos. It also includes my contact information and a link to my GitHub page. 

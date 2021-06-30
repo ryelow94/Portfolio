@@ -28,7 +28,7 @@ event.preventDefault()
   workCardProjLink.classList = "content" 
   workCardProjRepo.classList = "content" 
 
-  workCardProjText.textContent = "Cookbook" 
+  workCardProjText.textContent = "Cookbook: This app allows the user to enter ingredients and/or dietary intolerances into the search bar and then displays ten recipes they can make" 
   workCardProjLink.textContent = "Link to URL" 
   workCardProjRepo.textContent = " Link to Repo"
   
@@ -65,7 +65,7 @@ event.preventDefault()
   workCardPassLink.classList = "content" 
   workCardPassRepo.classList = "content"
 
-  workCardPassText.textContent = "Password Generator" 
+  workCardPassText.textContent = "Password Generator: This app generates a random password based on the criteria the user enters" 
   workCardPassLink.textContent = "Link to URL" 
   workCardPassRepo.textContent = " Link to Repo" 
 
@@ -100,7 +100,7 @@ event.preventDefault()
   workCardDashLink.classList = "content" 
   workCardDashRepo.classList = "content"
 
-  workCardDashText.textContent = "Weather Dashboard" 
+  workCardDashText.textContent = "Weather Dashboard: This app shows the current weather and the five day forecast (with three hour increments) for the city the user enters " 
   workCardDashLink.textContent = "Link to URL" 
   workCardDashRepo.textContent = " Link to Repo" 
 
@@ -123,6 +123,7 @@ event.preventDefault()
   workArea.appendChild(closeButton) 
 
   closeButton.addEventListener("click", closeWork) 
+
   
   //closes the work screen
   function closeWork(){ 
