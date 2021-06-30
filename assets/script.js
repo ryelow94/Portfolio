@@ -1,14 +1,14 @@
+//CSS Framework is Bulma
 var showWorkButton = document.querySelector("#work-examples-button")
 var workExamplesDiv = document.querySelector("#work-examples") 
 var workCard = document.createElement("div") 
 
 showWorkButton.addEventListener("click", showWork) 
-
+//show work function displays screenshots,URLs and link to Repos
 function showWork(event) { 
 event.preventDefault() 
-innerHTML = ""
 
-//FIRST CARD PROJECT 1
+//FIRST CARD PROJECT 1 (cookbook)
 
   var workCardImgDivProj = document.createElement("div") 
   var workCardFigureProj = document.createElement("figure") 
@@ -19,7 +19,7 @@ innerHTML = ""
   var workCardProjRepo = document.createElement("a")
 
   workCard.classList = "card" 
-
+  workCardPhotoProj.src = "./assets/CookBookPhoto.png"
   workCardImgDivProj.classList = "card-image" 
   workCardFigureProj.classList = "image is-4by3" 
   workCardPhotoProj.classList = "box"
@@ -32,7 +32,7 @@ innerHTML = ""
   workCardProjLink.textContent = "Link to URL" 
   workCardProjRepo.textContent = " Link to Repo"
   
-  workCardPhotoProj.setAttribute("src", "https://bulma.io/images/placeholders/1280x960.png")
+  //workCardPhotoProj.setAttribute("src", "/CookBookImage.png")
   workCardProjLink.setAttribute("href", "https://ryelow94.github.io/Cookbook/") 
   workCardProjRepo.setAttribute("href", "https://github.com/ryelow94/Cookbook")
 
@@ -56,6 +56,7 @@ innerHTML = ""
   var workCardPassLink = document.createElement("a") 
   var workCardPassRepo = document.createElement("a") 
 
+  workCardPhotoPass.src = "./assets/password.png"
   workCardImgDivPass.classList = "card-image" 
   workCardFigurePass.classList = "image is-4by3" 
   workCardPhotoPass.classList = "box"
@@ -68,7 +69,7 @@ innerHTML = ""
   workCardPassLink.textContent = "Link to URL" 
   workCardPassRepo.textContent = " Link to Repo" 
 
-  workCardPhotoPass.setAttribute("src", "https://bulma.io/images/placeholders/1280x960.png")
+  //workCardPhotoPass.setAttribute("src", "https://bulma.io/images/placeholders/1280x960.png")
   workCardPassLink.setAttribute("href", "https://ryelow94.github.io/RL-password-generator/") 
   workCardPassRepo.setAttribute("href", "https://github.com/ryelow94/RL-password-generator") 
 
@@ -90,6 +91,7 @@ innerHTML = ""
   var workCardDashLink = document.createElement("a") 
   var workCardDashRepo = document.createElement("a") 
 
+  workCardPhotoDash.src="./assets/Weather-Dash.png"
   workCardImgDivDash.classList = "card-image" 
   workCardFigureDash.classList = "image is-4by3" 
   workCardPhotoDash.classList = "box"
@@ -102,7 +104,7 @@ innerHTML = ""
   workCardDashLink.textContent = "Link to URL" 
   workCardDashRepo.textContent = " Link to Repo" 
 
-  workCardPhotoDash.setAttribute("src", "https://bulma.io/images/placeholders/1280x960.png")
+  //workCardPhotoDash.setAttribute("src", "https://bulma.io/images/placeholders/1280x960.png")
   workCardDashLink.setAttribute("href", "https://ryelow94.github.io/Weather_Dashboard/") 
   workCardDashRepo.setAttribute("href", "https://github.com/ryelow94/Weather_Dashboard") 
 
@@ -112,5 +114,18 @@ innerHTML = ""
   workCard.appendChild(workCardDashContent) 
   workCardDashContent.appendChild(workCardDashText) 
   workCardDashContent.appendChild(workCardDashLink) 
-  workCardDashContent.appendChild(workCardDashRepo)
+  workCardDashContent.appendChild(workCardDashRepo) 
+
+  var closeButton = document.createElement("button")
+  var workArea = document.getElementById("work") 
+  closeButton.classList="button has-text-danger"
+  closeButton.textContent="close"
+  workArea.appendChild(closeButton) 
+
+  closeButton.addEventListener("click", closeWork) 
+  
+  //closes the work screen
+  function closeWork(){ 
+    location.reload()
+  }
 }
