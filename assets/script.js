@@ -1,12 +1,12 @@
 //CSS Framework is Bulma
 var showWorkButton = document.querySelector("#work-examples-button")
 var workExamplesDiv = document.querySelector("#work-examples") 
-var workCard = document.createElement("div") 
 
 showWorkButton.addEventListener("click", showWork) 
 //show work function displays screenshots,URLs and link to Repos
 function showWork(event) { 
 event.preventDefault() 
+var workCard = document.createElement("div") 
 
 //FIRST CARD PROJECT 1 (cookbook)
 
@@ -120,13 +120,20 @@ event.preventDefault()
   var workArea = document.getElementById("work") 
   closeButton.classList="button has-text-danger"
   closeButton.textContent="close"
-  workArea.appendChild(closeButton) 
+  workExamplesDiv.appendChild(closeButton) 
 
   closeButton.addEventListener("click", closeWork) 
+
+  console.log("removeEventListener", showWorkButton) 
+
+  showWorkButton.removeEventListener("click", showWork);     
 
   
   //closes the work screen
   function closeWork(){ 
-    location.reload()
+    workExamplesDiv.innerHTML="" 
+
+    showWorkButton.addEventListener("click", showWork)
+
   }
 }
