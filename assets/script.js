@@ -28,7 +28,7 @@ event.preventDefault()
   workCardProjLink.classList = "content" 
   workCardProjRepo.classList = "content" 
 
-  workCardProjText.textContent = "Cookbook: This app allows the user to enter ingredients and/or dietary intolerances into the search bar and then displays ten recipes they can make" 
+  workCardProjText.textContent = "Cookbook: This app allows the user to enter ingredients and/or dietary restrictions into the search bar, and then displays ten recipes they can make" 
   workCardProjLink.textContent = "Link to URL" 
   workCardProjRepo.textContent = " Link to Repo"
   
