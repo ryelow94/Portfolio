@@ -128,12 +128,9 @@ var workCard = document.createElement("div")
 
   showWorkButton.removeEventListener("click", showWork);     
 
-  
   //closes the work screen
   function closeWork(){ 
     workExamplesDiv.innerHTML="" 
-
     showWorkButton.addEventListener("click", showWork)
-
   }
 }
